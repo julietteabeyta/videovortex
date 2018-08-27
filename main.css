@@ -23,8 +23,9 @@ body {
   background-image: url("/images/vv-grid-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  text-shadow: -0.5px 0px 0px #A900FF, -1px 0px #100AFF;
 }
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   body {
     background-image: none;
   }
@@ -65,6 +66,10 @@ header, .movie-desc {
 .search-container .search:focus {
   outline: none;
 }
+.search-container .search::placeholder {
+  color: white;
+  text-shadow: -0.5px 0px 0px #A900FF, -1px 0px #100AFF;
+}
 @media screen and (min-width: 414px) {
   .search-container .search {
     font-size: 15px;
@@ -76,7 +81,7 @@ header, .movie-desc {
   pointer-events: all;
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .search-container .filter-menu {
     display: none;
     pointer-events: none;
@@ -94,7 +99,7 @@ header, .movie-desc {
     display: block;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .search-container .filter-menu-label {
     display: none;
   }
@@ -127,7 +132,7 @@ header, .movie-desc {
 .collection-content {
   padding: 15px 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .collection-content {
     display: grid;
     grid-template-columns: 150px auto;
@@ -167,7 +172,7 @@ header, .movie-desc {
   cursor: pointer;
   z-index: 1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .leftbar {
     display: block;
   }
@@ -186,6 +191,7 @@ header, .movie-desc {
   height: 8px;
   width: 8px;
   border: 1px solid #FFF;
+  box-shadow: -1px 1px #A900FF;
 }
 
 input[type=checkbox]:checked ~ .checkbox {
@@ -243,7 +249,13 @@ input[type=checkbox]:checked ~ img {
 }
 
 .movie {
-  border-bottom: 2px dotted white;
+  border-bottom: 10px solid;
+  border-bottom: 2px solid;
+  border-image: url(/images/border-img.png);
+  border-image-repeat: repeat;
+  padding: 5px 0;
+  border-image-slice: 87 0;
+  border-image-width: 2px;
   padding: 10px 0;
 }
 .movie .movie-title {
@@ -253,6 +265,7 @@ input[type=checkbox]:checked ~ img {
 .movie .movie-desc {
   font-size: 8px;
   color: #F25597;
+  text-shadow: -0.5px 0px 0px #A900FF;
 }
 
 /*# sourceMappingURL=main.css.map */
