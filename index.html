@@ -1,418 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Video Vortex</title>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
     <div class="bg-video">
         <video autoplay loop>
             <source src="/images/vv-grid-bg.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="content">
-    <div class="fixed-content">
-    <header>
-        <img src="/images/vv-logo.svg" alt="Video Vortex" class="vv-logo">
-        <div class="update-time">Last updated: 5:26pm Aug 6 2018</div>
-    </header>
-    <hr>
-    <div class="search-container">
-        <div>
-            <img src="/images/vv-icn-search-magnifying-glass.png" alt="Magnifying glass" class="magnify">
-            <input type="text" class="search" placeholder="Search Collection">
+    <div class="site-wrapper">
+        <div class="fixed-content">
+            <header>
+                <img src="/images/vv-logo.svg" alt="Video Vortex" class="logo">
+                <div class="update-time">Last updated: 5:26pm Aug 6 2018</div>
+            </header>
+            <hr>
+            <div class="search-container">
+                <div class="search-input-group">
+                    <img src="/images/vv-icn-search-magnifying-glass.png" alt="Magnifying glass" class="icon-magnify">
+                    <input type="text" class="search-input" placeholder="Search Collection">
+                </div>
+                <div class="filter-menu-group">
+                    <img src="/images/vv-icn-filter.svg" alt="Filter menu" class="icon-hamburger">
+                    <div class="filter-menu-label">Filter</div>
+                </div>
+            </div>
+            <hr>
         </div>
-        <div>
-            <img src="/images/vv-icn-filter.svg" alt="Filter menu" class="filter-menu">
-            <div class="filter-menu-label">Filter</div>
-        </div>
-    </div>
-    <hr>
-    </div>
-    <div class="collection-content">
-        <div class="leftbar">
-            <ul>
-                <li class="category-select">
-                    <div>
-                        <input type="checkbox" name="staffpicks" value="staffpicks" checked>
-                        <span class="checkbox"></span>
-                        <img src="/images/vv-check.svg" alt="check">
-                        <span class="category-name">Staff Picks</span>
-                    </div>
-                    <div class="num-results">
-                        68
-                    </div>
-                </li>
-                <li class="category-select">
-                    <div>
-                        <input type="checkbox" name="newadditions" value="newadditions">
-                        <span class="checkbox"></span>
-                        <img src="/images/vv-check.svg" alt="check">
-                        <span class="category-name">New Additions</span>                    
+        <div class="collection-content">
+            <div class="filters">
+                <ul>
+                    <li class="filter">
+                        <div>
+                            <input type="checkbox" name="staffpicks" value="staffpicks" checked>
+                            <span class="checkbox"></span>
+                            <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                            <span class="filter-name">Staff Picks</span>
                         </div>
-                    <div class="num-results">
-                        16
-                    </div>
-                </li>
-                <li class="category-dropdown">
-                    <div>
-                        <input type="checkbox" name="format" value="format">
-                        <img src="/images/vv-arrow-menu-and-filter.svg" alt="dropdown">
-                        <span class="category">Format</span>
-                        <ul>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="blu-ray" value="blu-ray">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Blu-Ray</span>
-                                </div>
-                                <div class="num-results">
-                                    405
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="dvd" value="dvd">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">DVD</span>
-                                </div>
-                                <div class="num-results">
-                                    1,340
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="vhs" value="vhs">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">VHS</span>
-                                </div>
-                                <div class="num-results">
-                                    129
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="category-dropdown">
-                    <div>
-                        <input type="checkbox" name="genre" value="genre">
-                        <img src="/images/vv-arrow-menu-and-filter.svg" alt="dropdown">
-                        <span class="category">Genre</span>
-                        <ul>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="action" value="action">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Action</span>
-                                </div>
-                                <div class="num-results">
-                                    89
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="adventure" value="adventure">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Adventure</span>
-                                </div>
-                                <div class="num-results">
-                                    76
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="comedy" value="comedy">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Comedy</span>
-                                </div>
-                                <div class="num-results">
-                                    109
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="crime" value="crime">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Crime</span>
-                                </div>
-                                <div class="num-results">
-                                    45
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="drama" value="drama" checked>
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Drama</span>
-                                </div>
-                                <div class="num-results">
-                                    42
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="fantasy" value="fantasy">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Fantasy</span>
-                                </div>
-                                <div class="num-results">
-                                    59
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="historical" value="historical">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Historical</span>
-                                </div>
-                                <div class="num-results">
-                                    23
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="horror" value="horror">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Horror</span>
-                                </div>
-                                <div class="num-results">
-                                    53
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="mystery" value="mystery">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Mystery</span>
-                                </div>
-                                <div class="num-results">
-                                    38
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="romance" value="romance">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Romance</span>
-                                </div>
-                                <div class="num-results">
-                                    78
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="sci-fi" value="sci-fi">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Science Fiction</span>
-                                </div>
-                                <div class="num-results">
-                                    62
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="thriller" value="thriller">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Thriller</span>
-                                </div>
-                                <div class="num-results">
-                                    37
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="western" value="western">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">Western</span>
-                                </div>
-                                <div class="num-results">
-                                    23
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="category-dropdown">
-                    <div>
-                        <input type="checkbox" name="decade" value="decade">
-                        <img src="/images/vv-arrow-menu-and-filter.svg" alt="dropdown">
-                        <span class="category">Decade</span>
-                        <ul>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="forties" value="forties">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">'40s</span>
-                                </div>
-                                <div class="num-results">
-                                    3
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="fifties" value="fifties">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">'50s</span>
-                                </div>
-                                <div class="num-results">
-                                    11
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="sixties" value="sixties">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">'60s</span>
-                                </div>
-                                <div class="num-results">
-                                    11
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="seventies" value="seventies">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">'70s</span>
-                                </div>
-                                <div class="num-results">
-                                    23
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="eighties" value="eighties">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">'80s</span>
-                                </div>
-                                <div class="num-results">
-                                    54
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="nineties" value="nineties">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">'90s</span>
-                                </div>
-                                <div class="num-results">
-                                    69
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="two-thousands" value="two-thousands">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">2000s</span>
-                                </div>
-                                <div class="num-results">
-                                    102
-                                </div>
-                            </li>
-                            <li class="category-select">
-                                <div>
-                                    <input type="checkbox" name="twenty-tens" value="twenty-tens">
-                                    <span class="checkbox"></span>
-                                    <img src="/images/vv-check.svg" alt="check">
-                                    <span class="category-name">2010s</span>
-                                </div>
-                                <div class="num-results">
-                                    72
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+                        <div class="filter-match-count">
+                            68
+                        </div>
+                    </li>
+                    <li class="filter">
+                        <div>
+                            <input type="checkbox" name="newadditions" value="newadditions">
+                            <span class="checkbox"></span>
+                            <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                            <span class="filter-name">New Additions</span>
+                        </div>
+                        <div class="filter-match-count">
+                            16
+                        </div>
+                    </li>
+                    <li class="filter-category">
+                        <div>
+                            <input type="checkbox" name="format" value="format">
+                            <img src="/images/vv-arrow-menu-and-filter.svg" alt="dropdown" class="icon-arrow">
+                            <span class="category">Format</span>
+                            <ul>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="blu-ray" value="blu-ray">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Blu-Ray</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        405
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="dvd" value="dvd">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">DVD</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        1,340
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="vhs" value="vhs">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">VHS</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        129
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="filter-category">
+                        <div>
+                            <input type="checkbox" name="genre" value="genre">
+                            <img src="/images/vv-arrow-menu-and-filter.svg" alt="dropdown" class="icon-arrow">
+                            <span class="category">Genre</span>
+                            <ul>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="action" value="action">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Action</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        89
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="adventure" value="adventure">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Adventure</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        76
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="comedy" value="comedy">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Comedy</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        109
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="crime" value="crime">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Crime</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        45
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="drama" value="drama" checked>
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Drama</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        42
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="fantasy" value="fantasy">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Fantasy</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        59
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="historical" value="historical">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Historical</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        23
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="horror" value="horror">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Horror</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        53
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="mystery" value="mystery">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Mystery</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        38
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="romance" value="romance">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Romance</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        78
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="sci-fi" value="sci-fi">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Science Fiction</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        62
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="thriller" value="thriller">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Thriller</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        37
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="western" value="western">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">Western</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        23
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="filter-category">
+                        <div>
+                            <input type="checkbox" name="decade" value="decade">
+                            <img src="/images/vv-arrow-menu-and-filter.svg" alt="dropdown" class="icon-arrow">
+                            <span class="category">Decade</span>
+                            <ul>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="forties" value="forties">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">'40s</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        3
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="fifties" value="fifties">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">'50s</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        11
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="sixties" value="sixties">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">'60s</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        11
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="seventies" value="seventies">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">'70s</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        23
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="eighties" value="eighties">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">'80s</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        54
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="nineties" value="nineties">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">'90s</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        69
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="two-thousands" value="two-thousands">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">2000s</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        102
+                                    </div>
+                                </li>
+                                <li class="filter">
+                                    <div>
+                                        <input type="checkbox" name="twenty-tens" value="twenty-tens">
+                                        <span class="checkbox"></span>
+                                        <img src="/images/vv-check.svg" alt="check" class="checkmark">
+                                        <span class="filter-name">2010s</span>
+                                    </div>
+                                    <div class="filter-match-count">
+                                        72
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="film-list">
+                <div class="results">14 titles found for <span>Staff picks + Drama</span></div>
+                <ul>
+                    <li class="movie">
+                        <div class="movie-title">$5 a Day</div>
+                        <div class="movie-description">USA | 2008 | 98 mins | Blu-Ray ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">$9.99</div>
+                        <div class="movie-description">Australia, Israel | 2008 | 78 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">'68</div>
+                        <div class="movie-description">USA | 1987 | 98 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">'71</div>
+                        <div class="movie-description">UK | 2014 | 99 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">(500) Days of Summer</div>
+                        <div class="movie-description">USA | 2009 | 95 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">...And God Created Women</div>
+                        <div class="movie-description">France, Italy | 1956 | 92 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">0.45</div>
+                        <div class="movie-description">USA | 2006 | 97 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">077 Our Man in Casablanca / Mission Casablanca</div>
+                        <div class="movie-description">Italy, France | 1966 | 84 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">1</div>
+                        <div class="movie-description">USA | 2013 | 111 mins | Blu-Ray ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">1 a Minute</div>
+                        <div class="movie-description">USA | 2010 | 110 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">1 Giant Leap</div>
+                        <div class="movie-description">UK | 2002 | 155 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">1 Love: A Tribute to Basketball in America</div>
+                        <div class="movie-description">USA | 2009 | 95 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">1 Message</div>
+                        <div class="movie-description">USA | 2011 | 152 mins | DVD ...</div>
+                    </li>
+                    <li class="movie">
+                        <div class="movie-title">1,000 Eyes of Dr. Mabuse, The</div>
+                        <div class="movie-description">France, Italy, Germany | 1960 | 103 mins | DVD ...</div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="film-list">
-            <div class="results">14 titles found for <span class="applied-filters">Staff picks + Drama</div>
-            <ul>
-                <li class="movie">
-                    <div class="movie-title">$5 a Day</div>
-                    <div class="movie-desc">USA | 2008 | 98 mins | Blu-Ray ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">$9.99</div>
-                    <div class="movie-desc">Australia, Israel | 2008 | 78 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">'68</div>
-                    <div class="movie-desc">USA | 1987 | 98 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">'71</div>
-                    <div class="movie-desc">UK | 2014 | 99 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">(500) Days of Summer</div>
-                    <div class="movie-desc">USA | 2009 | 95 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">...And God Created Women</div>
-                    <div class="movie-desc">France, Italy | 1956 | 92 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">0.45</div>
-                    <div class="movie-desc">USA | 2006 | 97 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">077 Our Man in Casablanca / Mission Casablanca</div>
-                    <div class="movie-desc">Italy, France | 1966 | 84 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">1</div>
-                    <div class="movie-desc">USA | 2013 | 111 mins | Blu-Ray ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">1 a Minute</div>
-                    <div class="movie-desc">USA | 2010 | 110 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">1 Giant Leap</div>
-                    <div class="movie-desc">UK | 2002 | 155 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">1 Love: A Tribute to Basketball in America</div>
-                    <div class="movie-desc">USA | 2009 | 95 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">1 Message</div>
-                    <div class="movie-desc">USA | 2011 | 152 mins | DVD ...</div>
-                </li>
-                <li class="movie">
-                    <div class="movie-title">1,000 Eyes of Dr. Mabuse, The</div>
-                    <div class="movie-desc">France, Italy, Germany | 1960 | 103 mins | DVD ...</div>
-                </li>
-            </ul>
-        </div>
-    </div>
     </div>
 </body>
+
 </html>

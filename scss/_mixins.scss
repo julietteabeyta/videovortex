@@ -1,0 +1,10 @@
+@mixin responsive($screen-size) {
+  @media screen and (min-width: $screen-size) {
+    @content;
+  }
+}
+
+%flex-align-center {
+  display: flex;
+  align-items: center;
+}
